@@ -1,20 +1,37 @@
 .panelContent {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
 }
 
 .panelDetail {
-  /* padding: 10px; */
-  text-align: left;
+  width: 150px;
+  height: 50px;
 }
 .panelDetail p {
   display: inline-block;
-  padding-right: 60px;
+  float: left;
+  margin: 0;
+  line-height:50px;
+}
+.panelDetail #nume {
+  float: right;
+  color: yellow;
+  margin: 0;
+}
+.panelKey {
+  width: 150px;
+  height: 50px;
 }
 .panelKey p {
+  float: right;
   display: inline-block;
-  text-align: justify;
+  color: yellow;
+  line-height:50px;
 }
 .panelKey img {
-  padding-right: 60px;
+  float: left;
+}
+
+p {
+  margin: 0;
 }

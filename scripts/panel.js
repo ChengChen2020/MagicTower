@@ -1,9 +1,9 @@
-"strict mode";
+'strict mode';
 
 const createPanelHtml = function (brave) {
   let panel = `<div class="panelContent" style="position: absolute;left:${
     brave.mapLeft - 6.5 * brave.gridSize
-  }px;top:${brave.mapTop - 20}px;">`;
+  }px;top:${brave.mapTop}px;">`;
   panel += createDetail("Health", brave.life);
   panel += createDetail("Attack", brave.attack);
   panel += createDetail("Defence", brave.defence);
@@ -16,7 +16,7 @@ const createPanelHtml = function (brave) {
 };
 
 const createDetail = function (name, number) {
-  return `<div class="panelDetail"><p>${name}</p><p>${number}</p></div>`;
+  return `<div class="panelDetail"><p>${name}</p><p id='nume'>${number}</p></div>`;
 };
 
 const createKey = function (imgSrc, number, brave) {
